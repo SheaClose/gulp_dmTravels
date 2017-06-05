@@ -6,9 +6,6 @@
         <h1> {{ package.country }} </h1>
         <p> {{ package.desc }} </p>
 			 <h3> {{ package.price | currency }} </h3>
-
-         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
-        is expecting an id to be passed along. You can get that id from the data object that we are repeating over. The syntax for going to a route with params is "routename({param:paramValue})" -->
-        <button ui-sref="">Book Now</button>
+        <button ui-sref="booked({id: package.id})">Book Now</button>
     </section>
 </section>
