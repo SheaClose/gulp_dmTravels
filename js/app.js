@@ -1,6 +1,7 @@
-angular
-  .module('devmtnTravel', ['ui.router'])
-  .config(function($stateProvider, $urlRouterProvider) {
+angular.module('devmtnTravel', ['ui.router']).config([
+  '$stateProvider',
+  '$urlRouterProvider',
+  function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -8,27 +9,28 @@ angular
       })
       .state('packages', {
         url: '/packages/:country',
-        templateUrl: `../views/packages.html`,
+        templateUrl: '../views/packages.html',
         controller: 'packagesCtrl'
       })
       .state('locations', {
         url: '/locations',
-        templateUrl: `../views/locations.html`,
+        templateUrl: '../views/locations.html',
         controller: 'locationsCtrl'
       })
       .state('booked', {
         url: '/booked/:id',
-        templateUrl: `../views/booked.html`,
+        templateUrl: '../views/booked.html',
         controller: 'bookedCtrl'
       })
       .state('adventurers', {
         url: '/adventurers',
-        templateUrl: `../views/about-adventurers.html`
+        templateUrl: '../views/about-adventurers.html'
       })
       .state('contact', {
         url: '/contact',
-        templateUrl: `../views/contact.html`
+        templateUrl: '../views/contact.html'
       });
 
     $urlRouterProvider.otherwise('/');
-  });
+  }
+]);

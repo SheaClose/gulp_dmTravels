@@ -1,7 +1,10 @@
-angular
-  .module('devmtnTravel')
-  .controller('packagesCtrl', function($scope, mainSrv, $state) {
-    $scope.packageInfo = mainSrv.packageInfo.filter(
-      c => c.country === $state.params.country
-    );
-  });
+angular.module('devmtnTravel').controller('packagesCtrl', [
+  '$scope',
+  'mainSrv',
+  '$state',
+  function($scope, mainSrv, $state) {
+    $scope.packageInfo = mainSrv.packageInfo.filter(function(c) {
+      return c.country === $state.params.country;
+    });
+  }
+]);
