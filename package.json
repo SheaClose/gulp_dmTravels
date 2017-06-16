@@ -1,0 +1,28 @@
+{
+  "name": "DevMtn-Travels",
+  "version": "1.0.0",
+  "description": "####",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheaClose/DevMtn-Travels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SheaClose/DevMtn-Travels/issues"
+  },
+  "homepage": "https://github.com/SheaClose/DevMtn-Travels#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
